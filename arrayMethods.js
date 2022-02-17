@@ -86,8 +86,14 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 */
 
 // CODE HERE
-//const myStrongest // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
-
+const myStrongest = monstersInYourPocket.filter(arrOfObj, callback) =>{
+  arrOfObj.forEach((element) =>{
+    if(element.cp > 200){
+      callback(element)
+    }
+  })
+}
+console.log(myStrongest(monstersInYourPocket, callback))
 
 
 ////////// PROBLEM 5 //////////
